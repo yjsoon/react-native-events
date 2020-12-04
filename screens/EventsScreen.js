@@ -9,7 +9,7 @@ function EventsHomeScreen({ navigation }) {
       <Button
         title="Second screen"
         onPress={() => navigation.navigate("EventsSecond")}
-      ></Button>
+      />
     </View>
   );
 }
