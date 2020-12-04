@@ -6,6 +6,7 @@ import HomeScreen from "./screens/HomeScreen";
 import EventsScreen from "./screens/EventsScreen";
 import ContactScreen from "./screens/ContactScreen";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { FontAwesome } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
@@ -21,6 +22,10 @@ export default function App() {
               iconName = "ios-home";
             } else if (route.name === "Events") {
               iconName = focused ? "ios-list-box" : "ios-list";
+            } else if (route.name === "Contact") {
+              iconName = "ios-people";
+              // iconName = Platform.OS === "ios" ? "ios-people" : "md-people";
+              // return <FontAwesome name="group" size={size - 4} color={color} />;
             }
 
             // You can return any component that you like here!
