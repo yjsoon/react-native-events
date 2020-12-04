@@ -15,10 +15,7 @@ const Stack = createStackNavigator();
 export default function EventsScreen() {
   return (
     <Stack.Navigator>
-      <Stack.Screen
-        name="EventsHome"
-        component={EventsHomeScreen}
-      ></Stack.Screen>
+      <Stack.Screen name="EventsHome" component={EventsHomeScreen} />
     </Stack.Navigator>
   );
 }
